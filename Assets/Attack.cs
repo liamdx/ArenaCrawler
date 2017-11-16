@@ -6,12 +6,17 @@ public class Attack : MonoBehaviour {
 
 	private float damage;
 
-	public ParticleSystem attack01;
-	public ParticleSystem attack02;
+	public GameObject Attack01;
+	public GameObject Attack02;
+
+	private ParticleSystem attack01;
+	private ParticleSystem attack02;
 
 	// Use this for initialization
 	void Start () {
 		damage = 1f;
+		attack01 = Attack01.GetComponent<ParticleSystem> ();
+		attack02 = Attack02.GetComponent<ParticleSystem> ();
 	}
 	
 	// Update is called once per frame
@@ -57,6 +62,7 @@ public class Attack : MonoBehaviour {
 		}
 
 	}
+		
 
 
 	void DoDamage(){
