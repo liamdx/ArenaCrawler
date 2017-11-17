@@ -16,6 +16,8 @@ public class Player2 : MonoBehaviour {
 
 		float vav = Input.GetAxis ("Vertical");
 		float hav = Input.GetAxis ("Horizontal");
+		Debug.Log (hav);
+		Debug.Log (vav);
 		Vector3 pfv = transform.forward;
 
 		if(Input.GetButton("Vertical")){
